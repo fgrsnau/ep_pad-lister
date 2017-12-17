@@ -4,7 +4,7 @@
     <title>Padlist</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-    <link href="/pad-lister/static/bootstrap.min.css" rel="stylesheet">
+    <link href="pad-lister/static/bootstrap.min.css" rel="stylesheet">
     <style type="text/css">
         body {
             font-size: 16px;
@@ -22,7 +22,7 @@
 
 <div class="jumbotron">
     <div class="container">
-        <h1>Padlist</h1>
+        <h1><a href="./">Padlist</a></h1>
 
         <p><em>All*</em> pads, sorted by last edit date.</p>
     </div>
@@ -41,7 +41,7 @@
         <tbody>
         <% pads.forEach(function (pad) { %>
         <tr>
-            <td><a href="/p/<%= pad.name %>"><%= pad.name %></a></td>
+            <td><a href="p/<%= pad.name %>"><%= pad.name %></a></td>
             <td><%= pad.lastRevision %></td>
             <td><%= pad.lastAccess %></td>
         </tr>
